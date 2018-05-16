@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="266.0" prefWidth="425.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.ConfigurationChoiceController">
+   <children>
+      <SplitPane dividerPositions="0.38369304556354916" layoutX="3.0" layoutY="5.0" prefHeight="256.0" prefWidth="419.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="254.0" prefWidth="143.0">
+               <children>
+                  <ComboBox layoutX="5.0" layoutY="14.0" prefWidth="150.0" promptText="配置文件选择" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="254.0" prefWidth="269.0">
+               <children>
+                  <ScrollPane layoutX="-2.0" layoutY="-3.0" prefHeight="256.0" prefWidth="254.0">
+                     <content>
+                        <TextArea prefHeight="267.0" prefWidth="261.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

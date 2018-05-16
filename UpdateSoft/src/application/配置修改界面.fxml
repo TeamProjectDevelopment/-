@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="241.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConfigurationUpdateController">
+   <children>
+      <BorderPane layoutX="7.0" layoutY="11.0" prefHeight="221.0" prefWidth="410.0">
+         <top>
+            <TitledPane prefHeight="145.0" prefWidth="410.0" text="配置修改界面" BorderPane.alignment="CENTER">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <TextArea id="updateConfiTextArea" prefHeight="125.0" prefWidth="429.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+            </TitledPane>
+         </top>
+         <center>
+            <HBox prefHeight="22.0" prefWidth="410.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="updateChoiceFileButton" mnemonicParsing="false" onAction="#updateChoiceFile" text="选择文件">
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="updateSureUpdateButton" mnemonicParsing="false" onAction="#updateSureUpdate" text="确定更新">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </center>
+         <bottom>
+            <HBox prefHeight="33.0" prefWidth="410.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="已选择的文件：">
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="updateFileInfoLabel" prefHeight="15.0" prefWidth="90.0">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button disable="true" mnemonicParsing="false" text="删除" textFill="#c30808" visible="false" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
